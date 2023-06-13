@@ -4,12 +4,6 @@
 name: Metayer Lucas
 located_in: France, Nantes
 current_job: Full Stack Developer
-education:
-  [
-    "BTS Informatique",
-    "Licence Informatique / Developpeur",
-    "Master . . .",
-  ]
 ```
   
 ---  
