@@ -33,7 +33,7 @@ Currently contributing to **Symfony UX** 🎵 and open to freelance missions or 
 
 ### 👷 Recent open source pull requests
 {{- $n := ""}}
-{{- range recentPullRequests 999}}
+{{- range recentPullRequests 99}}
 {{- if and (ge .CreatedAt.Year 2026) (or (lt (len .Repo.URL) 28) (ne (slice .Repo.URL 0 28) "https://github.com/Mlucas44/"))}}
 {{- $n = printf "%sx" $n}}
 {{- if le (len $n) 10}}
@@ -46,7 +46,7 @@ Currently contributing to **Symfony UX** 🎵 and open to freelance missions or 
 <details>
 <summary>See all {{len $n}} pull requests</summary>
 {{$m := ""}}
-{{- range recentPullRequests 999}}
+{{- range recentPullRequests 99}}
 {{- if and (ge .CreatedAt.Year 2026) (or (lt (len .Repo.URL) 28) (ne (slice .Repo.URL 0 28) "https://github.com/Mlucas44/"))}}
 {{- $m = printf "%sx" $m}}
 {{- if gt (len $m) 10}}
