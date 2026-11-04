@@ -32,10 +32,9 @@ Currently contributing to **Symfony UX** 🎵 and open to freelance missions or 
 **[CheckQuartier](https://github.com/Mlucas44/checkquartier)**: neighborhood scoring app (Symfony · PostgreSQL · Leaflet).
 
 ### 👷 Recent open source pull requests
-
 - 🟣 [[LiveComponent] Reject overflown dates during date hydration](https://github.com/symfony/ux/pull/4159) on [symfony/ux](https://github.com/symfony/ux) (1 week ago)
-- 🟢 [Feature/sante](https://github.com/My-Digital-School-Nantes/MDS-MyDigitalHub/pull/20) on [My-Digital-School-Nantes/MDS-MyDigitalHub](https://github.com/My-Digital-School-Nantes/MDS-MyDigitalHub) (2 years ago)
-- 🟣 [Feature/sante](https://github.com/My-Digital-School-Nantes/MDS-MyDigitalHub/pull/8) on [My-Digital-School-Nantes/MDS-MyDigitalHub](https://github.com/My-Digital-School-Nantes/MDS-MyDigitalHub) (2 years ago)
+
+
 
 ### 📫 Get in touch
 
