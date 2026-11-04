@@ -32,9 +32,31 @@ Currently contributing to **Symfony UX** 🎵 and open to freelance missions or 
 **[CheckQuartier](https://github.com/Mlucas44/checkquartier)**: neighborhood scoring app (Symfony · PostgreSQL · Leaflet).
 
 ### 👷 Recent open source pull requests
-{{range recentPullRequests 30}}{{if or (lt (len .Repo.URL) 28) (ne (slice .Repo.URL 0 28) "https://github.com/Mlucas44/")}}
+{{- $n := ""}}
+{{- range recentPullRequests 100}}
+{{- if and (ge .CreatedAt.Year 2026) (or (lt (len .Repo.URL) 28) (ne (slice .Repo.URL 0 28) "https://github.com/Mlucas44/"))}}
+{{- $n = printf "%sx" $n}}
+{{- if le (len $n) 10}}
 - {{ if eq .State "MERGED" }}🟣{{ else if eq .State "OPEN" }}🟢{{ else }}🔴{{ end }} [{{.Title}}]({{.URL}}) on [{{.Repo.Name}}]({{.Repo.URL}}) ({{humanize .CreatedAt}})
-{{- end}}{{end}}
+{{- end}}
+{{- end}}
+{{- end}}
+
+{{if gt (len $n) 10 -}}
+<details>
+<summary>See all {{len $n}} pull requests</summary>
+{{$m := ""}}
+{{- range recentPullRequests 100}}
+{{- if and (ge .CreatedAt.Year 2026) (or (lt (len .Repo.URL) 28) (ne (slice .Repo.URL 0 28) "https://github.com/Mlucas44/"))}}
+{{- $m = printf "%sx" $m}}
+{{- if gt (len $m) 10}}
+- {{ if eq .State "MERGED" }}🟣{{ else if eq .State "OPEN" }}🟢{{ else }}🔴{{ end }} [{{.Title}}]({{.URL}}) on [{{.Repo.Name}}]({{.Repo.URL}}) ({{humanize .CreatedAt}})
+{{- end}}
+{{- end}}
+{{- end}}
+
+</details>
+{{- end}}
 
 ### 📫 Get in touch
 
